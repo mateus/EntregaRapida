@@ -1,0 +1,45 @@
+<html lang="en" ng-app="EntregadorApp">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1" />
+		<meta name="google-signin-client_id" content="1080669249343-4l9ikapbpoqpk2v715cs77lvih8das68.apps.googleusercontent.com.apps.googleusercontent.com">
+		<base href="/">
+
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+		rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../css/styles.css">
+	</head>
+	<body ng-cloak layout="column" ng-controller="EntregadorCtrl">
+		<md-toolbar layout="row">
+			<div class="md-toolbar-tools container">
+				<h1 class="logo"><i class="fa fa-map"></i>Entrega<span>Rápida</span></h1>
+				<span flex></span>
+				<!-- <md-button hide-sm href="/pedidos">
+					<span>Minhas Entregas</span>
+				</md-button> -->
+				<div class="user-info">
+					<div class="info">
+						<span>Arthur Assunção</span>
+						<a ng-click="signOut()">Sair</a>
+					</div>
+					<img class="user-pic" src="https://lh3.googleusercontent.com/-pU5f8u3woqo/AAAAAAAAAAI/AAAAAAAAAeQ/QpLJlpfBzpE/s120-c/photo.jpg">
+				</div>
+				<!-- <md-button hide-gt-sm class="md-icon-button" aria-label="More">
+					<i class="material-icons">more_vert</i>
+				</md-button> -->
+			</div>
+		</md-toolbar>
+
+		<div ng-view></div>
+
+		<!-- Angular Material Dependencies -->
+		<script src="https://apis.google.com/js/platform.js" async defer></script>
+		<script src="../bower_components/angular/angular.min.js"></script>
+		<script src="../bower_components/angular-route/angular-route.min.js"></script>
+		<script src="../bower_components/angular-animate/angular-animate.min.js"></script>
+		<script src="../bower_components/angular-aria/angular-aria.min.js"></script>
+		<script src="../bower_components/angular-material/angular-material.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRPvEO-Nbk_qGlm2jqJiKItQ5g0ohW4V0&libraries=places&callback=angular.noop&language=pt-BR"></script>
+		<script src="../js/entregador.js"></script>
+	</body>
+</html>

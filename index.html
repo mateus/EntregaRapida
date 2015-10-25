@@ -1,17 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="EntregaRapidaApp">
 <head lang="pt-br">
 	<meta charset="utf-8">
 	<meta name="viewport" content="initial-scale=1" />
 	<meta name="google-signin-client_id" content="1080669249343-4l9ikapbpoqpk2v715cs77lvih8das68.apps.googleusercontent.com.apps.googleusercontent.com">
+	<base href="/">
 
 	<title>EntregaRápida</title>
 
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
-<body>
-	<h1>Oi</h1>
+<body ng-cloak layout="column" ng-controller="AppCtrl" class="ng-cloak">
+	<md-toolbar layout="row">
+		<div class="md-toolbar-tools container">
+			<h1 class="logo"><i class="fa fa-map"></i>Entrega<span>Rápida</span></h1>
+			<span flex></span>
+			<md-button hide-sm href="/pedidos">
+				<span>Minhas Entregas</span>
+			</md-button>
+			<div hide-sm class="user-info">
+				<div hide-sm class="info">
+					<span>{{googleUserName}}</span>
+					<a ng-click="signOut()">Sair</a>
+				</div>
+				<img class="user-pic" data-ng-src="{{googleUserPhoto}}">
+			</div>
+			<md-button hide-gt-sm class="md-icon-button" aria-label="More">
+				<i class="material-icons">more_vert</i>
+			</md-button>
+		</div>
+	</md-toolbar>
+
+	<div layout="row" flex>
+		<div layout="column" flex id="content">
+			<md-content layout="column" flex class="md-padding">
+				<div ng-view></div>
+			</md-content>
+		</div>
+	</div>
 
 	<script src="https://apis.google.com/js/platform.js" async defer></script>
 	<script src="bower_components/angular/angular.min.js"></script>
