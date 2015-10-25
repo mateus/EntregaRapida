@@ -1,0 +1,23 @@
+{
+  "name": "EntregaRapida",
+  "homepage": "https://github.com/Mtsferreirasilva/EntregaRapida",
+  "authors": [
+    "mtsferreirasilva <mtsferreirasilva@gmail.com>",
+    "arthurassuncao <arthur.xx92@gmail.com>"
+  ],
+  "description": "Hackathon DevFest Sudeste 2015",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.1.0",
+    "google-signin": "GoogleWebComponents/google-signin#~1.2.0"
+  }
+}
