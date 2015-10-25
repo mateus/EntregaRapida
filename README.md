@@ -32,5 +32,5 @@ A partir das características do app é possível trazer uma série de melhorias
   * HTML5 Geolocation
 
 ## Equipe?
-Mateus Ferreira Silva
-Arthur Nascimento Assunção
+- Mateus Ferreira Silva
+- Arthur Nascimento Assunção
