@@ -10844,6 +10844,7 @@ google-map, #map {
 
 .status-pedido {
   transform: translateY(-50%);
+  margin-top: -3px;
   height: 30px; }
   .status-pedido .status-circle {
     background-color: #3f51b5;
