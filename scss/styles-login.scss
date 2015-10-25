@@ -1,0 +1,139 @@
+@import "../bower_components/angular-material/angular-material";
+@import "font-awesome/font-awesome";
+
+.container{
+	width: 100%;
+	padding: 0 10px;
+	margin: 0 auto;
+	z-index: 100;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-weight: 300;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+body{
+	background: #eee;
+}
+
+body:after{
+	content: " ";
+    background-image: url('../img/background.jpg'); 
+   	display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity : 0.15;
+    z-index: 0;
+}
+
+.login{
+	margin: 35px auto 0;
+	width: 400px;
+	padding: 40px 30px;
+	background-color: #fff;
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.075);
+	box-sizing: border-box;
+	font-weight: 500 !important;
+
+	span{
+		opacity: 0.7;
+	}
+
+	.fa{
+		margin-right: 6px;
+	}
+
+	& .top{
+		text-align: center;
+		color: rgb(63,81,181);
+		margin-bottom: 20px;
+
+		& .user-pic{
+			width: 120px;
+			border-radius: 50%;
+			margin-left: 10px;
+			margin-top: 20px;
+		}
+	}
+
+	& md-input-container input{
+		border: 1px solid #ccc !important;
+		padding: 10px 12px;
+		transition: all 0.3s ease-in-out;
+	}
+
+	& md-input-container input:focus{
+		border: 1px solid rgb(63,81,181) !important;
+	}
+
+	& md-input-container .sem-bottom{
+		border-bottom: none !important;
+	}
+
+	& .md-raised{
+		width: 100%;
+		margin: 20px 0;
+		background: rgb(63,81,181);
+		color: #fff;
+		font-weight: 500;
+
+		& span{
+			opacity: 1;
+		}
+	}
+
+	& .logar:hover{
+		background-color: lighten(rgb(63,81,181), 5%) !important;	
+	}
+
+	& .outra_conta{
+		font-size: 20px;
+		text-align: center;
+	}
+
+	& .divider{
+		margin-top: 10px;
+		border: 1px solid #ccc;
+	}
+
+	& .ou{
+		margin: 0 auto;
+		text-align: center;
+		width: 50px;
+		background: #fff;
+		position: relative;
+		top: -10px;
+		font-size: 14px;
+	}
+
+	& .google{
+		width: 100%;
+
+		& .button-content.signIn{
+			margin: 0 auto;
+		}
+	}
+
+	google-signin{
+		margin: 10px 0 0;
+	}
+
+}
+.login .google .button-content.signIn{
+	width: 100%;
+}
+
+md-input-container{
+	padding-bottom: 0 !important;
+	padding: 0;
+}
+md-input-container.md-input-focused .md-input{
+	padding-bottom: 10px !important;
+}
+
+
