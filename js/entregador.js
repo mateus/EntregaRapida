@@ -29,7 +29,7 @@ app.controller('EntregadorCtrl', ['$scope', '$mdSidenav', '$location', '$http', 
 	var podeDaZoom = true;
 	var marker1, marker2;
 	var map;
-	var webserviceIP = "http://192.168.20.44:8080";
+	var webserviceIP = "http://localhost:8080";
 	
 	$scope.$on('$viewContentLoaded', function readyToTrick() {
 		$scope.id_entrega = localStorage.getItem("pedido_id");
@@ -92,6 +92,10 @@ app.controller('EntregadorCtrl', ['$scope', '$mdSidenav', '$location', '$http', 
   	$scope.confirmarEntrega = function(){
   		var elemColetado = $scope.eleRecuperado;
   		elemColetado.status = 4;
+  		var d = new Date();
+		var h = d.getHours();
+		var m = d.getMinutes();
+		elemColetado.hora_entrega = h + ":" + m;
 
   		$http.post(webserviceIP + '/api/entregas/update', elemColetado)
 		.success(function(data) {

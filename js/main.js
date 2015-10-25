@@ -53,7 +53,7 @@ app.controller('AppCtrl', ['$scope', '$mdSidenav', '$location', '$http', functio
     };
   }
 
-  var webserviceIP = "http://192.168.20.44:8080";
+  var webserviceIP = "http://localhost:8080";
   $http.get(webserviceIP + '/api/entregas')
     .success(function(data) {
         $scope.entregas = data;
@@ -311,7 +311,7 @@ app.controller('progressCtrl', ['$scope', '$interval', '$http', function($scope,
     }
 
     console.log(localStorage.getItem("novo_pedido_id"));
-    var webserviceIP = "http://192.168.20.44:8080";
+    var webserviceIP = "http://localhost:8080";
     $interval(function() {
         $http.get(webserviceIP + '/api/entrega?id=' + localStorage.getItem("novo_pedido_id"))
         .success(function(data) {

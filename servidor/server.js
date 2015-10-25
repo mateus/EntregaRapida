@@ -87,8 +87,8 @@ app.use(bodyParser.json());
             if (err)
                 res.send(err)
 
-            var id_status = {"_id": entrega._id, 'status': entrega.status};
-            pusher.trigger('status', 'updated', id_status);
+            // var id_status = {"_id": entrega._id, 'status': entrega.status};
+            // pusher.trigger('status', 'updated', id_status);
 
             res.json(entrega);
         });
