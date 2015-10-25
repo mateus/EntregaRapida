@@ -1,0 +1,82 @@
+<html lang="en" ng-app="LoginApp">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1" />
+		<base href="/">
+
+		<link rel="stylesheet" type="text/css" href="../css/styles-login.css">
+
+  		<link rel="import" type="css" href="../bower_components/google-signin/google-signin.html">
+	</head>
+
+	<body layout="flex" ng-controller="LoginCtrl">
+		<div class="md-3-line container">
+			<div class="login">
+				<div class="top">
+					<div class="md-display-1 logo">
+						<i class="fa fa-map"></i>
+						Entrega<span>Rápida</span>
+					</div>
+    			<img class="user-pic md-card-image" ng-src="../img/user.png" alt="Washed Out">
+				</div>
+
+	      <md-input-container md-no-float>
+	        <input ng-model="user.login" class="sem-bottom" placeholder="Login">
+	      </md-input-container>
+
+	      <md-input-container md-no-float>
+	        <input type="password" ng-model="user.senha" placeholder="Senha">
+	      </md-input-container>
+
+	      <md-button class="md-raised logar">Fazer Login</md-button>
+
+	      <div class="divider"></div>
+	      <div class="ou">ou</div>
+
+	      <div class="outra_conta">
+		      <span>Logar com</span>
+		      <!-- <md-button class="md-raised google">Google +</md-button> -->
+		      <google-signin class="google" label-signin="Google +" client-id="1080669249343-4l9ikapbpoqpk2v715cs77lvih8das68.apps.googleusercontent.com" scopes="https://www.googleapis.com/auth/drive"></google-signin>
+
+		      <template id="awareness" is="dom-bind">
+						<google-signin-aware
+									scopes="{{scope}}"
+									signed-in="{{signedIn}}"
+									is-authorized="{{isAuthorized}}"
+									need-additional-auth="{{needAdditionalAuth}}"
+									on-google-signin-aware-success="handleSignIn"
+									on-google-signin-aware-signed-out="handleSignOut"></google-signin-aware>
+					</template> 
+	      </div>
+    	</div>
+    </div>
+
+    <script type="text/javascript">
+			var aware = document.querySelector('#awareness');
+			aware.usuario = 'Ainda não logado';
+			aware.foto = 'http://gurucul.com/wp-content/uploads/2015/01/default-user-icon-profile.png';
+			aware.handleSignIn = function(response) {
+			      // console.log('[Aware] Signin Response', response);
+			      console.log(gapi);
+			      var user = gapi.auth2.getAuthInstance().currentUser.get().getBasicProfile();
+			      // console.log(user);
+			      aware.usuario = user.ye;
+					aware.foto = user.Ei;
+					window.location.assign("http://localhost:8000/")
+			};
+			aware.handleSignOut = function(response){
+	      aware.usuario = 'Ainda não logado';
+				aware.foto = 'http://gurucul.com/wp-content/uploads/2015/01/default-user-icon-profile.png';
+	    };
+		</script>
+
+		<!-- Angular Material Dependencies -->
+		<script src="../bower_components/webcomponentsjs/webcomponents.js"></script>
+		<script src="../bower_components/angular/angular.min.js"></script>
+		<script src="../bower_components/angular-route/angular-route.min.js"></script>
+		<script src="../bower_components/angular-animate/angular-animate.min.js"></script>
+		<script src="../bower_components/angular-aria/angular-aria.min.js"></script>
+		<script src="../bower_components/angular-material/angular-material.min.js"></script>
+		<script src="../js/login.js"></script>
+	</body>
+</html>
