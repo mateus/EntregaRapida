@@ -1,0 +1,74 @@
+<div layout="row" layout-wrap class="container">
+	<div flex="100">
+		<h1>Nova Entrega</h1>
+	</div>
+	<div flex="100" flex-gt-md="50">
+		<form name="userForm">
+			<div layout layout="column">
+	        <md-input-container flex class="md-icon-float">
+	          <label>Título para a entrega</label>
+	          <md-icon class="name">
+	          	<i class="fa fa-tag"></i></md-icon>
+	          <input ng-model="novaEntrega.titulo" required>
+	        </md-input-container>
+	      </div>
+			<div layout layout="column">
+	        <md-input-container flex class="md-icon-float">
+	          <label>Destinatário</label>
+	          <md-icon class="name">
+	          	<i class="fa fa-user"></i></md-icon>
+	          <input ng-model="novaEntrega.destinatario" required>
+	        </md-input-container>
+	      </div>
+	      <div layout layout="column">
+	        <md-input-container flex class="md-icon-float">
+	          <label>Endereço para coleta</label>
+	          <md-icon class="name">
+	          	<i class="fa fa-map-marker origem"></i></md-icon>
+	          <input id="autocomplete-google1" ng-model="novaEntrega.origem.nome" required>
+	        </md-input-container>
+	      </div>
+	      <div layout layout="column">
+	        <md-input-container flex class="md-icon-float" ng-show="novaEntrega.origem.nome">
+	          <label>Endereço de entrega</label>
+	          <md-icon class="name">
+	          	<i class="fa fa-map-marker destino"></i></md-icon>
+	          <input id="autocomplete-google2" ng-model="novaEntrega.destino.nome" required>
+	        </md-input-container>
+	      </div>
+			<div layout="row" layout-wrap>
+				<div flex="100">
+					<p>Tamanho do pacote:</p>
+				</div>
+				<md-radio-group class="pacotes" layout="row" layout-wrap ng-model="novaEntrega.tipo">
+					<div flex="100" flex-gt-md="50">
+				      <md-radio-button value="1" class="md-primary"><img src="img/pacote1.png"> <span>Pequeno</span></md-radio-button>
+				      <md-radio-button value="3" class="md-primary"><img src="img/pacote3.png"> <span>Grande</span></md-radio-button>
+			      </div>
+			      <div flex="100" flex-gt-md="50">
+			      	<md-radio-button value="2" class="md-primary"><img src="img/pacote2.png"> <span>Médio</span></md-radio-button>
+				      <md-radio-button value="4" class="md-primary"><img src="img/pacote4.png"> <span>EcoPacote</span></md-radio-button>
+					</div>
+			    </md-radio-group>
+			</div>
+			<div layout="row" layout-wrap>
+				<div flex="100">
+					<p>Pacote frágil?</p>
+				</div>	
+				<div flex="100">								
+					<md-switch class="md-primary fragil" ng-model="novaEntrega.fragil" aria-label="Switch 1">
+		        		<span>{{ novaEntrega.fragil ? 'Sim, este pacote precisa ser transportado com cuidado.' : 'Não' }}</span>
+				   </md-switch>
+				</div>
+			</div>
+			<div layout="row">
+				<span flex></span>
+				<md-button data-ng-click="submitNovaEntrega()" class="md-raised md-primary">Enviar pedido</md-button>
+			</div>
+		</form>
+		<!-- <p>{{novaEntrega}}</p> -->
+	</div>
+	<div class="maps-container">
+		<div id="map"></div>
+	</div>
+</div>

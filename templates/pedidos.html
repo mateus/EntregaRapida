@@ -1,0 +1,37 @@
+<div layout="row" layout-wrap class="container">
+	<md-button href="/nova-entrega" class="md-fab my-fab" aria-label="Insert Drive">
+		<i class="fa fa-plus"></i>
+		<md-tooltip md-direction="left">
+			Nova entrega
+		</md-tooltip>
+	</md-button>
+	<div flex="100">
+		<div layout="row" layout-wrap>
+			<div flex="100" flex-gt-sm="50">
+				<h1>Minhas Entregas</h1>
+			</div>
+			<div flex="100" flex-gt-md="50">
+				<md-radio-group class="filter-btns" layout="row" layout-wrap ng-model="filtroRadioBtn">
+			      <md-radio-button value="todos" class="md-primary">Todos</md-radio-button>
+			      <md-radio-button value="pendente" class="md-primary">Pendentes</md-radio-button>
+			      <md-radio-button value="completo" class="md-primary">Completos</md-radio-button>
+			    </md-radio-group>
+			</div>
+		</div>
+	    <div flex ng-repeat="(data, pedidos) in entregas">
+	    	<md-subheader class="md-no-sticky">{{ data }}</md-subheader>
+	    	<div layout="row" layout-wrap>
+	    		<md-list-item ng-click="abrirItem($event)" ng-show="filtroRadioBtn == 'pendente' && entrega.status == 1 ? true : filtroRadioBtn == 'completo' && entrega.status == 4 ? true : filtroRadioBtn == 'todos' ? true : false" flex="100" flex-gt-md="50" class="md-3-line" ng-repeat="entrega in pedidos">
+		        <img ng-src="img/pacote{{entrega.tipo}}.png" class="md-avatar"/>
+		        <div class="md-list-item-text" layout="column">
+		          <h3>{{ entrega.titulo }} <span class="item-status"><i class="fa fa-{{entrega.status == 4 ? 'check-circle-o' : 'circle-o'}}"></i><span>{{ entrega.status == 1 ? 'Pendente' : entrega.status == 2 ? 'Aceito' : entrega.status == 3 ? 'Coletado' : 'Concluído - ' + entrega.hora_entrega }}</span></span></h3>
+		          <h4>Origem: {{ entrega.origem.nome }}</h4>
+		          <h4>Destino: {{ entrega.destino.nome }}</h4>
+		          <p ng-show="entrega.entregador"><span>Responsável:</span> {{ entrega.entregador }}</p>
+		        </div>
+		      </md-list-item>
+	    	</div>
+	    	<md-divider></md-divider>
+	    </div>
+	</div>
+</div>

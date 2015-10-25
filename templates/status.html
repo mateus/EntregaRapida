@@ -1,0 +1,43 @@
+<div layout="row" layout-wrap class="container">
+	<div flex="100">
+		<div layout="row" layout-wrap>
+			<div flex="100" flex-gt-sm="50">
+				<h1>Acompanhe seu Pedido</h1>
+			</div>
+		</div>
+	    <div flex>
+	    	<div ng-controller="progressCtrl as vm" layout="column" layout-margin ng-cloak class="container">
+			  <md-progress-linear class="md-warn status-progresso" md-mode="buffer" value="{{vm.determinateValue}}" md-buffer-value="{{vm.determinateValue2}}"></md-progress-linear>
+              <div class="status" flex="100">
+              	<div layout="row" layout-align="space-between center">
+	              	<div class="status-pedido">
+						<div class="status-circle status1 show"></div>
+					</div>
+					<div class="status-pedido">
+						<div class="status-circle status2"></div>
+					</div>
+					<div class="status-pedido">
+						<div class="status-circle status3"></div>
+					</div>
+					<div class="status-pedido">
+						<div class="status-circle status4"></div>
+					</div>
+              </div>
+              <div layout="row" layout-align="space-between center">
+	              	<div class="status-pedido-text">
+						<span>Pendente</span>
+					</div>
+					<div class="status-pedido-text">
+						<span>Aceito</span>
+					</div>
+					<div class="status-pedido-text">
+						<span>Coletado</span>
+					</div>
+					<div class="status-pedido-text">
+						<span>Concluído</span>
+					</div>
+              </div>
+ 			</div>
+	    </div>
+	</div>
+</div>

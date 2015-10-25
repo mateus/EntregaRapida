@@ -1,0 +1,38 @@
+<div layout="row" class="listToMapView">
+	<span flex></span>
+	<p class="modo">Modo:</p>
+	<md-button class="md-icon-button" ng-click="trocaView()" ng-hide="mapView" aria-label="Mostrar Mapa">
+		<i class="fa fa-map"></i>
+	</md-button>
+	<md-button class="md-icon-button" ng-click="trocaView()" ng-show="mapView" aria-label="Mostrar Lista">
+		<i class="fa fa-bars"></i>
+	</md-button>
+</div>
+
+<md-content style="padding-bottom: 50px;">
+	<md-list>
+		<md-list-item ng-click="abrirItemEntregador($event)" class="md-3-line pacotes-entregador" ng-repeat="entrega in entregas_selecionadas" style="position: relative; margin-bottom: 0; padding: 0;'">
+			<img ng-src="img/pacote{{entrega.tipo}}.png" class="md-avatar" style="width: auto;"\>
+			<div class="md-list-item-text">
+				<h2>{{ entrega.titulo }}</h3>
+				<h3><strong>Origem:</strong> <span class="space">{{ entrega.origem.nome }}</span></h4>
+				<h3><strong>Destino:</strong> <span class="space">{{ entrega.destino.nome }}</span></h4>
+				<h3><strong>Destinatário:</strong> <span class="space">{{ entrega.destinatario }}</span></h4>
+				<div layout="row">
+					<span flex></span>
+					<md-button ng-click="aceitarPedido(entrega); $event.stopPropagation();" class="md-primary">Aceitar</md-button>
+				</div>
+			</div>
+			<md-divider md-inset ng-if="!$last" style="width: 100%; left: 0;"></md-divider>
+		</md-list-item>
+	</md-list>
+</md-content>
+
+<div layout="row" class="opcoesPacotes">
+	<div flex="50" ng-click="ecopacotes(false)">
+		<i class="fa fa-car"></i>
+	</div>
+	<div flex="50" ng-click="ecopacotes(true)">
+		<i class="fa fa-bicycle"></i>
+	</div>
+</div>
