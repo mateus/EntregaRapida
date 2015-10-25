@@ -10863,6 +10863,9 @@ md-progress-linear.md-default-theme.md-warn, md-progress-linear.md-warn .md-bar 
   width: 98%;
   margin-left: 2px; }
 
+.container-status{
+  transform: translateY(25%); }
+
 .status {
   position: relative; }
 
