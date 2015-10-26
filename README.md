@@ -37,6 +37,7 @@ A partir das características do app é possível trazer uma série de melhorias
 - Arthur Nascimento Assunção
 
 ## Screenshots
+![alt tag](https://raw.githubusercontent.com/Mtsferreirasilva/EntregaRapida/master/readme-imgs/login.png)
 ![alt tag](https://raw.githubusercontent.com/Mtsferreirasilva/EntregaRapida/master/readme-imgs/entregas.png)
 ![alt tag](https://raw.githubusercontent.com/Mtsferreirasilva/EntregaRapida/master/readme-imgs/nova-entrega.png)
 ![alt tag](https://raw.githubusercontent.com/Mtsferreirasilva/EntregaRapida/master/readme-imgs/entregador.png)
