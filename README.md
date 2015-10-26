@@ -35,3 +35,10 @@ A partir das características do app é possível trazer uma série de melhorias
 ## Equipe?
 - Mateus Ferreira Silva
 - Arthur Nascimento Assunção
+
+## Screenshots
+![alt tag](https://raw.githubusercontent.com/Mtsferreirasilva/EntregaRapida/master/readme-imgs/entregas.png)
+![alt tag](https://raw.githubusercontent.com/Mtsferreirasilva/EntregaRapida/master/readme-imgs/nova-entrega.png)
+![alt tag](https://raw.githubusercontent.com/Mtsferreirasilva/EntregaRapida/master/readme-imgs/entregador.png)
+![alt tag](https://raw.githubusercontent.com/Mtsferreirasilva/EntregaRapida/master/readme-imgs/entregador-entrega.png)
+![alt tag](https://raw.githubusercontent.com/Mtsferreirasilva/EntregaRapida/master/readme-imgs/entregador-coleta.png)
