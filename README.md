@@ -1,5 +1,7 @@
 # EntregaRapida
 
+Protótipo vencedor do Hackathon do [Google Developer Group DevFest Sudeste 2015](http://sudeste.devfest.com.br/).
+
 ## Quais são os problemas?
 - Baixa eficiência do transporte de objetos dentro de uma mesma cidade
 - Alto custo de transporte e o tempo gastos pelos métodos convencionais, como os Correios, em curtas distâncias.
@@ -33,13 +35,21 @@ A partir das características do app é possível trazer uma série de melhorias
   * HTML5 Geolocation
 
 ## Equipe?
-- Mateus Ferreira Silva
-- Arthur Nascimento Assunção
+- [Mateus Ferreira Silva](http://mateusferreira.com.br)
+- [Arthur Nascimento Assunção](http://arthurassuncao.com)
 
 ## Screenshots
-![alt tag](https://raw.githubusercontent.com/Mtsferreirasilva/EntregaRapida/master/readme-imgs/login.png)
-![alt tag](https://raw.githubusercontent.com/Mtsferreirasilva/EntregaRapida/master/readme-imgs/entregas.png)
-![alt tag](https://raw.githubusercontent.com/Mtsferreirasilva/EntregaRapida/master/readme-imgs/nova-entrega.png)
-![alt tag](https://raw.githubusercontent.com/Mtsferreirasilva/EntregaRapida/master/readme-imgs/entregador.png)
-![alt tag](https://raw.githubusercontent.com/Mtsferreirasilva/EntregaRapida/master/readme-imgs/entregador-entrega.png)
-![alt tag](https://raw.githubusercontent.com/Mtsferreirasilva/EntregaRapida/master/readme-imgs/entregador-coleta.png)
+### Interface Cliente
+<p align="center"><img src="https://raw.githubusercontent.com/Mtsferreirasilva/EntregaRapida/master/readme-imgs/login.png"></p>
+
+<p align="center"><img src="https://raw.githubusercontent.com/Mtsferreirasilva/EntregaRapida/master/readme-imgs/entregas.png"></p>
+
+<p align="center"><img src="https://raw.githubusercontent.com/Mtsferreirasilva/EntregaRapida/master/readme-imgs/nova-entrega.png"></p>
+
+
+### Interface Entregador
+<p align="center"><img src="https://raw.githubusercontent.com/Mtsferreirasilva/EntregaRapida/master/readme-imgs/entregador.png"></p>
+
+<p align="center"><img src="https://raw.githubusercontent.com/Mtsferreirasilva/EntregaRapida/master/readme-imgs/entregador-coleta.png"></p>
+
+<p align="center"><img src="https://raw.githubusercontent.com/Mtsferreirasilva/EntregaRapida/master/readme-imgs/entregador-entrega.png"></p>
