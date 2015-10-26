@@ -23,6 +23,7 @@ A partir das características do app é possível trazer uma série de melhorias
   * Polymer
   * Google Maps API
   * Google Sign In
+  * Google Places
   * NodeJS
   * MongoDB
 
