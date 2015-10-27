@@ -48,8 +48,8 @@ A partir das características do app é possível trazer uma série de melhorias
 
 
 ### Interface Entregador
-<p align="center"><img src="https://raw.githubusercontent.com/Mtsferreirasilva/EntregaRapida/master/readme-imgs/entregador.png"></p>
+<p align="center"><img height="450px" src="https://raw.githubusercontent.com/Mtsferreirasilva/EntregaRapida/master/readme-imgs/entregador.png"></p>
 
-<p align="center"><img src="https://raw.githubusercontent.com/Mtsferreirasilva/EntregaRapida/master/readme-imgs/entregador-coleta.png"></p>
+<p align="center"><img height="450px" src="https://raw.githubusercontent.com/Mtsferreirasilva/EntregaRapida/master/readme-imgs/entregador-coleta.png"></p>
 
-<p align="center"><img src="https://raw.githubusercontent.com/Mtsferreirasilva/EntregaRapida/master/readme-imgs/entregador-entrega.png"></p>
+<p align="center"><img height="450px" src="https://raw.githubusercontent.com/Mtsferreirasilva/EntregaRapida/master/readme-imgs/entregador-entrega.png"></p>
