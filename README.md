@@ -17,7 +17,7 @@ Hoje, o transporte de objetos dentro de uma cidade tem alto custo, pois exige do
 
 Além disso, nos últimos anos a sustentabilidade tem sido um tema bastante relevante. O Brasil é um dos países que criou metas para diminuição das emissões de poluentes até 2030, no caso em 43%. O EntregaRápida permite o envio por meio do EcoPacote, um pacote que utiliza as ciclovias para a entrega. Essas ciclovias têm sido implementadas em diversas cidades do Brasil, como na cidade de Belo Horizonte.
 
-A partir das características do app é possível trazer uma série de melhorias para a sociedade, gerando novas oportunidades de négocio e, ao mesmo tempo, oferecer maior comodidade no envio e recebimento de objetos dentro da cidade. Desta forma, modernizando a cidade.
+A partir das características do app é possível trazer uma série de melhorias para a sociedade, gerando novas oportunidades de negócio e, ao mesmo tempo, oferecer maior comodidade no envio e recebimento de objetos dentro da cidade. Desta forma, modernizando a cidade.
 
 ## Quais tecnologias e como foram utilizadas?
 * Principais:
